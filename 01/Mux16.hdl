@@ -12,5 +12,69 @@ CHIP Mux16 {
     OUT out[16];
 
     PARTS:
-    //// Replace this comment with your code.
+    Not(in=sel, out=notSel);
+
+    And(a=a[0], b=notSel, out=aSwitch0);
+    And(a=sel, b=b[0], out=bSwitch0);
+    Or(a=aSwitch0, b=bSwitch0, out=out[0]);
+
+    And(a=a[1], b=notSel, out=aSwitch1);
+    And(a=sel, b=b[1], out=bSwitch1);
+    Or(a=aSwitch1, b=bSwitch1, out=out[1]);
+
+    And(a=a[2], b=notSel, out=aSwitch2);
+    And(a=sel, b=b[2], out=bSwitch2);
+    Or(a=aSwitch2, b=bSwitch2, out=out[2]);
+
+    And(a=a[3], b=notSel, out=aSwitch3);
+    And(a=sel, b=b[3], out=bSwitch3);
+    Or(a=aSwitch3, b=bSwitch3, out=out[3]);
+
+    And(a=a[4], b=notSel, out=aSwitch4);
+    And(a=sel, b=b[4], out=bSwitch4);
+    Or(a=aSwitch4, b=bSwitch4, out=out[4]);
+
+    And(a=a[5], b=notSel, out=aSwitch5);
+    And(a=sel, b=b[5], out=bSwitch5);
+    Or(a=aSwitch5, b=bSwitch5, out=out[5]);
+
+    And(a=a[6], b=notSel, out=aSwitch6);
+    And(a=sel, b=b[6], out=bSwitch6);
+    Or(a=aSwitch6, b=bSwitch6, out=out[6]);
+
+    And(a=a[7], b=notSel, out=aSwitch7);
+    And(a=sel, b=b[7], out=bSwitch7);
+    Or(a=aSwitch7, b=bSwitch7, out=out[7]);
+
+    And(a=a[8], b=notSel, out=aSwitch8);
+    And(a=sel, b=b[8], out=bSwitch8);
+    Or(a=aSwitch8, b=bSwitch8, out=out[8]);
+
+    And(a=a[9], b=notSel, out=aSwitch9);
+    And(a=sel, b=b[9], out=bSwitch9);
+    Or(a=aSwitch9, b=bSwitch9, out=out[9]);
+
+    And(a=a[10], b=notSel, out=aSwitch10);
+    And(a=sel, b=b[10], out=bSwitch10);
+    Or(a=aSwitch10, b=bSwitch10, out=out[10]);
+
+    And(a=a[11], b=notSel, out=aSwitch11);
+    And(a=sel, b=b[11], out=bSwitch11);
+    Or(a=aSwitch11, b=bSwitch11, out=out[11]);
+
+    And(a=a[12], b=notSel, out=aSwitch12);
+    And(a=sel, b=b[12], out=bSwitch12);
+    Or(a=aSwitch12, b=bSwitch12, out=out[12]);
+
+    And(a=a[13], b=notSel, out=aSwitch13);
+    And(a=sel, b=b[13], out=bSwitch13);
+    Or(a=aSwitch13, b=bSwitch13, out=out[13]);
+
+    And(a=a[14], b=notSel, out=aSwitch14);
+    And(a=sel, b=b[14], out=bSwitch14);
+    Or(a=aSwitch14, b=bSwitch14, out=out[14]);
+
+    And(a=a[15], b=notSel, out=aSwitch15);
+    And(a=sel, b=b[15], out=bSwitch15);
+    Or(a=aSwitch15, b=bSwitch15, out=out[15]);
 }
